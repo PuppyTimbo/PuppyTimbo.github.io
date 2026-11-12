@@ -171,3 +171,4 @@ button.card{width:100%;font:inherit;text-align:left;cursor:pointer}
 .agegate .cc-b button:first-child{background:#fb7185;border-color:#fb7185}
 .agegate .cc-b button.sec{border-color:#fb7185}
 .box.small{font-size:.86rem;color:var(--muted)}
+.cc-d[hidden]{display:none}
