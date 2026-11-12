@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Media Kit · Puppy Timbo</title>
+<meta name="description" content="Media Kit von Puppy Timbo – Reichweite, Zielgruppe und Kooperationen für Brands.">
+<meta property="og:title" content="Puppy Timbo – Media Kit">
+<meta property="og:image" content="https://puppytimbo.github.io/assets/social-preview.png">
+<link rel="canonical" href="https://puppytimbo.github.io/mediakit.html">
+<meta property="og:url" content="https://puppytimbo.github.io/mediakit.html">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+<meta name="theme-color" content="#3a1270">
+<link rel="icon" href="assets/paw.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/timbo.css">
+<script src="assets/lang.js"></script>
+<style>
+  .box{padding:20px}
+  .two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .case h3{font-family:var(--font-head);font-weight:400;font-size:1.5rem;color:var(--neon);letter-spacing:.02em;margin-bottom:6px}
+  .stand{font-size:.8rem;color:var(--text-2);margin-top:8px}
+  .cta{display:inline-block;margin-top:12px;padding:12px 20px;border-radius:999px;background:var(--neon);color:#120428;font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="lang"><button data-set="de">DE</button><button data-set="en">EN</button></div>
+<main class="wrap wide">
+  <nav class="top"><a href="index.html">← Puppy Timbo</a></nav>
+  <h1 class="brush">Media Kit</h1>
+  <p style="margin:14px 0 22px;font-weight:700">Wandlungsfähig. <span style="color:var(--neon)">Cute.</span> Böse.</p>
+
+  <div class="grid" id="kpis"></div>
+  <p class="stand" id="stand"></p>
+
+  <h2 class="brush" data-lang="de">Über mich</h2><h2 class="brush" data-lang="en">About me</h2>
+  <div class="two">
+    <div class="box glass">
+      <p data-lang="de">Puppy seit 2016, 2025 offiziell getauft. Alpha statt devot – urban, Streetwear, MX-Gear und Sneaker. Hinter der Maske: gelernter Informatiker, Fotograf und Technical-Marketing-Profi. Alle Inhalte sind Eigenproduktionen, zweisprachig (DE/EN) und sauber als Werbung gekennzeichnet.</p>
+      <p data-lang="en">A pup since 2016, officially baptised in 2025. Alpha, not submissive – urban, streetwear, MX gear and sneakers. Behind the mask: a trained IT specialist, photographer and technical marketing pro. All content is self-produced, bilingual (DE/EN) and clearly labelled as advertising.</p>
+    </div>
+    <div class="box glass">
+      <p style="font-weight:800;margin-bottom:10px" data-lang="de">Gear-Welten</p><p style="font-weight:800;margin-bottom:10px" data-lang="en">Gear worlds</p>
+      <div class="chips"><span class="chip">MX-Gear</span><span class="chip">Streetwear</span><span class="chip">Sneaker</span><span class="chip">Sox</span><span class="chip">Baggys</span><span class="chip">Shiny Gear</span><span class="chip">Rubber</span><span class="chip">PVC</span><span class="chip">Gasmasken</span></div>
+    </div>
+  </div>
+
+  <h2 class="brush" data-lang="de">Zielgruppe</h2><h2 class="brush" data-lang="en">Audience</h2>
+  <div class="box glass"><ul class="dots" id="zg"></ul></div>
+
+  <div id="cases-sec"><h2 class="brush" data-lang="de">Fallbeispiele</h2><h2 class="brush" data-lang="en">Case studies</h2>
+  <div class="two" id="cases"></div></div>
+
+  <h2 class="brush" data-lang="de">Formate</h2><h2 class="brush" data-lang="en">Formats</h2>
+  <div class="box glass"><ul class="dots">
+    <li data-lang="de">Feed-Posts & Karussells (Produkt im Timbo-Look)</li><li data-lang="en">Feed posts & carousels (product in the Timbo look)</li>
+    <li data-lang="de">Reels & Unboxings</li><li data-lang="en">Reels & unboxings</li>
+    <li data-lang="de">Story-Serien mit Link & UTM-Tracking</li><li data-lang="en">Story series with link & UTM tracking</li>
+    <li data-lang="de">Gewinnspiele & Event-Content (CSD, Partys)</li><li data-lang="en">Giveaways & event content (Pride, parties)</li>
+  </ul></div>
+
+  <h2 class="brush" data-lang="de">Kontakt</h2><h2 class="brush" data-lang="en">Contact</h2>
+  <div class="box glass">
+    <p data-lang="de">Lust auf eine Kooperation? Schreib mir – ich melde mich mit Ideen und Paketen.</p>
+    <p data-lang="en">Fancy a collaboration? Get in touch – I'll come back with ideas and packages.</p>
+    <a class="cta" id="mail" href="https://ig.me/m/puppy_timbo" target="_blank" rel="noopener">📩 DM auf Instagram</a>
+  </div>
+
+  <footer><div class="rainbow"></div><p>Vielfalt macht stark. 🌈 · Wuff! 🐾</p></footer>
+</main>
+<script>
+(function(){
+  // Standardwerte (falls stats.json lokal nicht geladen werden kann)
+  var fallback={"stand": "Oktober 2026", "kpis": [{"wert": "5.766", "de": "Instagram-Follower", "en": "Instagram followers"}, {"wert": "1,2K", "de": "TikTok-Follower", "en": "TikTok followers"}, {"wert": "10", "de": "Jahre Puppy", "en": "years as a pup"}, {"wert": "150+", "de": "Events & CSDs", "en": "events & Prides"}], "zielgruppe": {"de": ["95 % Männer", "65 % zwischen 25 und 44 Jahren", "Top-Länder: Deutschland, USA, UK, Frankreich", "Queere Community, Gear- & Streetwear-Fans"], "en": ["95% men", "65% aged 25–44", "Top countries: Germany, USA, UK, France", "Queer community, gear & streetwear fans"]}, "cases": [], "kontakt": "https://ig.me/m/puppy_timbo"};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function render(d){
+    document.getElementById('kpis').innerHTML=d.kpis.map(function(k){
+      return '<div class="kpi glass"><b>'+esc(k.wert)+'</b><span data-lang="de">'+esc(k.de)+'</span><span data-lang="en">'+esc(k.en)+'</span></div>'}).join('');
+    document.getElementById('stand').innerHTML='<span data-lang="de">Stand: '+esc(d.stand)+'</span><span data-lang="en">As of: '+esc(d.stand)+'</span>';
+    var zg='';d.zielgruppe.de.forEach(function(t){zg+='<li data-lang="de">'+esc(t)+'</li>'});d.zielgruppe.en.forEach(function(t){zg+='<li data-lang="en">'+esc(t)+'</li>'});
+    document.getElementById('zg').innerHTML=zg;
+    document.getElementById('cases').innerHTML=d.cases.map(function(c){
+      return '<div class="box glass case"><h3>'+esc(c.titel)+'</h3><p data-lang="de">'+esc(c.de)+'</p><p data-lang="en">'+esc(c.en)+'</p></div>'}).join('');
+    var m=document.getElementById('mail');if(d.kontakt){m.href=d.kontakt;}
+    var cs=document.getElementById('cases-sec');if(cs)cs.style.display=d.cases&&d.cases.length?'':'none';
+  }
+  render(fallback);
+  fetch('data/stats.json',{cache:'no-store'}).then(function(r){return r.json()}).then(render).catch(function(){});
+})();
+</script>
+</body>
+</html>

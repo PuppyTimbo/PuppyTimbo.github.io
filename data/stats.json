@@ -1,0 +1,54 @@
+{
+  "_hinweis": "Zahlen hier aktualisieren. Fallbeispiele (cases) erst eintragen, wenn die Partner zugestimmt haben – Vorlage siehe _cases_vorlage. kontakt = Link für den Kontakt-Button.",
+  "stand": "Oktober 2026",
+  "kpis": [
+    {
+      "wert": "5.766",
+      "de": "Instagram-Follower",
+      "en": "Instagram followers"
+    },
+    {
+      "wert": "1,2K",
+      "de": "TikTok-Follower",
+      "en": "TikTok followers"
+    },
+    {
+      "wert": "10",
+      "de": "Jahre Puppy",
+      "en": "years as a pup"
+    },
+    {
+      "wert": "150+",
+      "de": "Events & CSDs",
+      "en": "events & Prides"
+    }
+  ],
+  "zielgruppe": {
+    "de": [
+      "95 % Männer",
+      "65 % zwischen 25 und 44 Jahren",
+      "Top-Länder: Deutschland, USA, UK, Frankreich",
+      "Queere Community, Gear- & Streetwear-Fans"
+    ],
+    "en": [
+      "95% men",
+      "65% aged 25–44",
+      "Top countries: Germany, USA, UK, France",
+      "Queer community, gear & streetwear fans"
+    ]
+  },
+  "cases": [],
+  "kontakt": "https://ig.me/m/puppy_timbo",
+  "_cases_vorlage": [
+    {
+      "titel": "TwinkX",
+      "de": "34 Instagram-Posts mit TwinkX-Gear. Top-Post: 3.629 Aufrufe, Unboxing-Reel mit 1.543 Konten Reichweite.",
+      "en": "34 Instagram posts featuring TwinkX gear. Top post: 3,629 views, unboxing reel reaching 1,543 accounts."
+    },
+    {
+      "titel": "CSD Kaiserslautern 2026",
+      "de": "Kampagne „Vielfalt macht stark“: 9 Posts, 7.028 Aufrufe, Top-Reel 1.466 Aufrufe.",
+      "en": "Campaign “Diversity makes us strong”: 9 posts, 7,028 views, top reel 1,466 views."
+    }
+  ]
+}

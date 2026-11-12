@@ -1,0 +1,97 @@
+/* Puppy Timbo – Design-System (Media-Kit-Look: Lila, gelber Pinsel, Glas + Neongrün) */
+@font-face{font-family:"Anton";src:url("anton.woff2") format("woff2");font-display:swap}
+:root{
+  --lila-1:#1b0833; --lila-2:#3a1270; --lila-3:#5b1fa6;
+  --neon:#39ff14; --neon-soft:rgba(57,255,20,.35);
+  --gelb:#ffd400; --blau:#2f7bff;
+  --glas:rgba(14,4,30,.55); --text:#ffffff; --text-2:#d9ccf2;
+  --radius:18px;
+  --font-head:'Anton','Impact',sans-serif;
+  --font:'Poppins',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#0d0420}
+body{
+  font-family:var(--font);color:var(--text);min-height:100vh;line-height:1.55;
+  background:
+    radial-gradient(900px 600px at 85% -10%, rgba(57,255,20,.18), transparent 60%),
+    radial-gradient(700px 500px at -10% 30%, rgba(255,212,0,.10), transparent 60%),
+    linear-gradient(160deg,var(--lila-2) 0%,var(--lila-1) 55%,#0d0420 100%);
+
+}
+body::before{ /* Pfoten-Muster */
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23ffffff' transform='rotate(-18 60 60)'%3E%3Cellipse cx='60' cy='72' rx='16' ry='13'/%3E%3Cellipse cx='40' cy='50' rx='7' ry='9'/%3E%3Cellipse cx='54' cy='42' rx='7' ry='9'/%3E%3Cellipse cx='68' cy='42' rx='7' ry='9'/%3E%3Cellipse cx='81' cy='50' rx='7' ry='9'/%3E%3C/g%3E%3C/svg%3E");
+}
+a{color:var(--neon)}
+.wrap{max-width:760px;margin:0 auto;padding:32px 16px 64px;position:relative}
+.wrap.wide{max-width:1040px}
+
+/* Gelber Pinselstrich hinter Überschriften */
+.brush{
+  display:inline-block;position:relative;font-family:var(--font-head);
+  font-weight:400;letter-spacing:.02em;text-transform:uppercase;color:#fff;
+  padding:.15em .6em .2em;z-index:0;
+  text-shadow:2px 2px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000;
+}
+.brush::before{
+  content:"";position:absolute;inset:0;z-index:-1;background:var(--gelb);
+  transform:rotate(-1.6deg) skewX(-8deg);
+  clip-path:polygon(2% 18%,8% 6%,30% 10%,52% 2%,78% 8%,97% 4%,100% 40%,96% 70%,99% 94%,72% 90%,45% 98%,20% 92%,3% 96%,0 60%);
+}
+h1.brush{font-size:clamp(2.2rem,7vw,3.6rem)}
+h2.brush{font-size:clamp(1.5rem,4.5vw,2.1rem);margin:40px 0 18px}
+
+/* Glas-Kacheln mit Neongrün-Rahmen */
+.glass{
+  background:var(--glas);border:2px solid var(--neon);border-radius:var(--radius);
+  box-shadow:0 0 0 1px rgba(0,0,0,.4),0 0 22px var(--neon-soft),inset 0 0 30px rgba(57,255,20,.06);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.kpi{padding:18px;text-align:center}
+.kpi b{display:block;font-family:var(--font-head);font-size:2.3rem;font-weight:400;color:var(--neon);line-height:1.1}
+.kpi span{font-size:.85rem;color:var(--text-2);font-weight:600}
+
+/* Listen mit grünen Punkten */
+ul.dots{list-style:none}
+ul.dots li{padding-left:1.4em;position:relative;margin:.35em 0}
+ul.dots li::before{content:"";position:absolute;left:0;top:.55em;width:.62em;height:.62em;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--neon);border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:600;background:rgba(57,255,20,.08)}
+
+.btn{
+  display:flex;align-items:center;gap:14px;width:100%;padding:15px 18px;margin:12px 0;
+  text-decoration:none;color:#fff;font-weight:700;font-size:1.02rem;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover{transform:translateY(-2px) rotate(-.4deg);box-shadow:0 0 34px var(--neon-soft)}
+.btn .ico{width:38px;height:38px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--neon);color:#120428;font-size:1.2rem}
+.btn small{display:block;font-weight:500;color:var(--text-2);font-size:.8rem}
+.btn.gelb{border-color:var(--gelb);box-shadow:0 0 22px rgba(255,212,0,.3)}
+.btn.gelb .ico{background:var(--gelb)}
+.tag-ad{font-size:.68rem;font-weight:700;color:#120428;background:var(--gelb);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+
+.rainbow{height:6px;border-radius:6px;background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787)}
+.muted{color:var(--text-2)}
+footer{margin-top:48px;text-align:center;font-size:.85rem;color:var(--text-2)}
+footer .rainbow{max-width:220px;margin:0 auto 14px}
+
+/* Sprachumschalter DE/EN */
+.lang{position:absolute;top:18px;right:16px;display:flex;gap:6px;z-index:5}
+.lang button{font:700 .8rem var(--font);color:#fff;background:var(--glas);border:1.5px solid var(--neon);border-radius:999px;padding:5px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--neon);color:#120428}
+html[lang="de"] [data-lang="en"], html[lang="en"] [data-lang="de"]{display:none!important}
+
+details.faq{margin:12px 0;padding:0}
+details.faq summary{cursor:pointer;list-style:none;padding:16px 50px 16px 18px;font-weight:700;position:relative}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";position:absolute;right:18px;top:10px;font-size:1.6rem;color:var(--neon)}
+details.faq[open] summary::after{content:"–"}
+details.faq .a{padding:0 18px 18px;color:var(--text-2)}
+details.faq .a p+p{margin-top:.6em}
+
+nav.top{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+nav.top a{font-weight:700;font-size:.85rem;text-decoration:none;color:#fff;border-bottom:2px solid var(--neon)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
