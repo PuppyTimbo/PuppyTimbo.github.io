@@ -2,29 +2,58 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<!-- Consent Mode v2: Standard = abgelehnt (muss VOR dem Google-Tag stehen) -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
+try{var tc=JSON.parse(localStorage.getItem('timbo-consent-v1'));if(tc){gtag('consent','update',{analytics_storage:tc.statistik?'granted':'denied',ad_storage:tc.marketing?'granted':'denied',ad_user_data:tc.marketing?'granted':'denied',ad_personalization:tc.marketing?'granted':'denied'});}}catch(e){}</script>
+<!-- Google-Tag (von GA4) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PMDLR2VM"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); </script>
+<script src="assets/consent.js" defer></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pup Play 101 · Puppy Timbo</title>
-<meta name="description" content="Pup Play 101 von Puppy Timbo: Was ist Pup Play, wie starte ich, was heißt Headspace, Handler, Konsens? Ehrliche Antworten auf Deutsch und Englisch.">
-<meta property="og:title" content="Pup Play 101 – by Puppy Timbo 🐾">
-<meta property="og:image" content="https://puppytimbo.github.io/assets/social-preview.png">
+<title>Pup Play 101 – Fragen & Antworten von Puppy Timbo 🐾</title>
+<meta name="description" content="Was ist Pup Play? Puppy Timbo beantwortet die häufigsten Fragen: Einstieg, Gear, Rollen, Headspace, Konsens und Aftercare – ehrlich, auf Deutsch und Englisch.">
+<meta name="keywords" content="Puppy Timbo, Pup Timbo, puppy_timbo, Pup Play, Puppy Play, Pup Play Deutschland, queer, LGBTQ, Streetwear, MX-Gear, Content Creator">
+<meta name="author" content="Puppy Timbo">
 <link rel="canonical" href="https://puppytimbo.github.io/pupplay101.html">
-<meta property="og:url" content="https://puppytimbo.github.io/pupplay101.html">
 <meta property="og:type" content="profile">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:site_name" content="Puppy Timbo">
+<meta property="og:title" content="Pup Play 101 – Fragen &amp; Antworten von Puppy Timbo 🐾">
+<meta property="og:description" content="Was ist Pup Play? Puppy Timbo beantwortet die häufigsten Fragen: Einstieg, Gear, Rollen, Headspace, Konsens und Aftercare – ehrlich, auf Deutsch und Englisch.">
+<meta property="og:url" content="https://puppytimbo.github.io/pupplay101.html">
+<meta property="og:image" content="https://puppytimbo.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Puppy Timbo – Wandlungsfähig. Cute. Böse.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+<meta name="twitter:title" content="Pup Play 101 – Fragen &amp; Antworten von Puppy Timbo 🐾">
+<meta name="twitter:description" content="Was ist Pup Play? Puppy Timbo beantwortet die häufigsten Fragen: Einstieg, Gear, Rollen, Headspace, Konsens und Aftercare – ehrlich, auf Deutsch und Englisch.">
+<meta name="twitter:image" content="https://puppytimbo.github.io/assets/og-image.png">
+<meta name="theme-color" content="#1a092f">
+<link rel="icon" href="assets/paw.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://puppytimbo.github.io/llms.txt">
+<link rel="preload" href="assets/fonts/permanent-marker-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
+<!-- Google Search Console: falls nötig, hier den Bestätigungs-Code eintragen: <meta name="google-site-verification" content="CODE"> -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "FAQPage",
  "inLanguage": "de",
+ "url": "https://puppytimbo.github.io/pupplay101.html",
  "name": "Pup Play 101 – Fragen & Antworten von Puppy Timbo",
  "author": {
   "@type": "Person",
+  "@id": "https://puppytimbo.github.io/#person",
   "name": "Puppy Timbo",
   "url": "https://puppytimbo.github.io/",
   "sameAs": [
    "https://www.instagram.com/puppy_timbo/",
    "https://www.tiktok.com/@puppy.timbo",
+   "https://www.facebook.com/timbo.puppy",
    "https://t.me/timbo_bark",
    "https://github.com/PuppyTimbo"
   ]
@@ -145,99 +174,102 @@
  ]
 }
 </script>
-<meta name="theme-color" content="#3a1270">
-<link rel="icon" href="assets/paw.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/timbo.css">
-<script src="assets/lang.js"></script>
-<style>
-  .intro{padding:20px;margin-top:8px}
-  .igcta{margin-top:12px}.igcta a{font-weight:700;text-decoration:none;color:var(--neon)}
-  .cat{font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gelb);margin:30px 0 6px}
-  .note{padding:16px 18px;margin-top:28px;border-color:var(--gelb);box-shadow:0 0 22px rgba(255,212,0,.25)}
-</style>
 </head>
 <body>
+<div class="paws" aria-hidden="true"><i style="left:6%;animation-duration:19s;animation-delay:0s;width:18px;height:18px"></i><i style="left:18%;animation-duration:24s;animation-delay:6s;width:26px;height:26px"></i><i style="left:31%;animation-duration:21s;animation-delay:11s;width:16px;height:16px"></i><i style="left:47%;animation-duration:26s;animation-delay:3s;width:22px;height:22px"></i><i style="left:62%;animation-duration:20s;animation-delay:9s;width:18px;height:18px"></i><i style="left:74%;animation-duration:23s;animation-delay:1s;width:28px;height:28px"></i><i style="left:86%;animation-duration:18s;animation-delay:13s;width:16px;height:16px"></i><i style="left:94%;animation-duration:25s;animation-delay:7s;width:20px;height:20px"></i></div>
 <div class="lang"><button data-set="de">DE</button><button data-set="en">EN</button></div>
-<main class="wrap">
-  <nav class="top"><a href="index.html">← Puppy Timbo</a></nav>
-  <h1 class="brush">Pup Play 101</h1>
-  <div class="intro glass">
+<main class="wrap" style="padding-top:20px">
+  <a class="back" href="./">← Puppy Timbo</a>
+  <section class="head" style="margin-top:10px">
+    <h1>Pup Play 101</h1>
+    <p class="tag" data-lang="de">Fragen & Antworten von Puppy Timbo</p>
+    <p class="tag" data-lang="en">Questions & answers by Puppy Timbo</p>
+  </section>
+  <div class="box" style="margin-top:22px">
     <p data-lang="de">Du bist neugierig, was hinter Masken, Pfoten und „Wuff!“ steckt? Hier beantworte ich die Fragen, die mir am häufigsten gestellt werden – ehrlich, ohne Tabus und ohne Fachchinesisch. Seit 2016 bin ich als Puppy unterwegs. 🐾</p>
     <p data-lang="en">Curious what's behind the masks, paws and “woof!”? Here I answer the questions I get asked most – honest, no taboos, no jargon. I've been a pup since 2016. 🐾</p>
   </div>
 
-  <p class="cat" data-lang="de">Einstieg</p><p class="cat" data-lang="en">Getting started</p>
+<h2 class="cat" data-lang="de">Einstieg</h2><h2 class="cat" data-lang="en">Getting started</h2>
 
-  <details class="faq glass"><summary><span data-lang="de">Was ist Pup Play überhaupt?</span><span data-lang="en">What is pup play anyway?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Was ist Pup Play überhaupt?</span><span data-lang="en">What is pup play anyway?</span></summary><div class="a">
     <p data-lang="de">Pup Play ist ein Rollenspiel: Erwachsene schlüpfen in die Rolle eines verspielten Hundes. Es geht um Spaß, Entspannung, Vertrauen und darum, für eine Weile den Kopf frei zu bekommen. Manche spielen allein, manche mit einem Handler, viele treffen sich in der Community auf Events und CSDs.</p>
-    <p data-lang="en">Pup play is a roleplay: adults take on the role of a playful dog. It's about fun, relaxation, trust and switching your head off for a while. Some play solo, some with a handler, and many meet up in the community at events and Pride.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Pup play is a roleplay: adults take on the role of a playful dog. It's about fun, relaxation, trust and switching your head off for a while. Some play solo, some with a handler, and many meet up in the community at events and Pride.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Brauche ich teures Gear?</span><span data-lang="en">Do I need expensive gear?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Brauche ich teures Gear?</span><span data-lang="en">Do I need expensive gear?</span></summary><div class="a">
     <p data-lang="de">Nein. Pup Play beginnt im Kopf, nicht im Shop. Halsband, Mitts oder ein Quietschi sind nett, aber optional. Mein Tipp: Eine einfache Neopren-Hood (ab ca. 25 €) hilft vielen beim Reinkommen. Und: Gear muss sich wie eine zweite Haut anfühlen – kauf nicht, was dir nicht passt.</p>
-    <p data-lang="en">No. Pup play starts in your head, not in a shop. A collar, mitts or a squeaky toy are nice but optional. My tip: a simple neoprene hood (from about €25) helps many people get into it. And: gear should feel like a second skin – don't buy what doesn't fit you.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">No. Pup play starts in your head, not in a shop. A collar, mitts or a squeaky toy are nice but optional. My tip: a simple neoprene hood (from about €25) helps many people get into it. And: gear should feel like a second skin – don't buy what doesn't fit you.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Wie starte ich?</span><span data-lang="en">How do I start?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Wie starte ich?</span><span data-lang="en">How do I start?</span></summary><div class="a">
     <p data-lang="de">1. Lies dich ein (z. B. pupplay.de). 2. Tritt einer Telegram- oder Discord-Gruppe bei und lies erst mal mit. 3. Stell Fragen – niemand beißt (zumindest nicht ungefragt 😉). 4. Geh auf ein Event oder einen CSD und lern Pups in echt kennen. Du kannst mir auch einfach schreiben.</p>
-    <p data-lang="en">1. Read up (e.g. pupplay.de). 2. Join a Telegram or Discord group and just read along first. 3. Ask questions – nobody bites (at least not without asking 😉). 4. Go to an event or Pride and meet pups in real life. You can also just message me.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">1. Read up (e.g. pupplay.de). 2. Join a Telegram or Discord group and just read along first. 3. Ask questions – nobody bites (at least not without asking 😉). 4. Go to an event or Pride and meet pups in real life. You can also just message me.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Muss ich Teil eines Rudels werden?</span><span data-lang="en">Do I have to join a pack?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Muss ich Teil eines Rudels werden?</span><span data-lang="en">Do I have to join a pack?</span></summary><div class="a">
     <p data-lang="de">Nein. Viele Pups sind „Straypups“ – ohne festes Rudel – und trotzdem mitten in der Community. Ein Rudel ist schön, wenn es passt, aber kein Pflichtprogramm.</p>
-    <p data-lang="en">No. Many pups are “stray pups” – without a fixed pack – and still right in the middle of the community. A pack is great when it fits, but it's not mandatory.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">No. Many pups are “stray pups” – without a fixed pack – and still right in the middle of the community. A pack is great when it fits, but it's not mandatory.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Sind Puppys Furries?</span><span data-lang="en">Are pups furries?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Sind Puppys Furries?</span><span data-lang="en">Are pups furries?</span></summary><div class="a">
     <p data-lang="de">Meistens nicht. Furries erschaffen oft ganze Fantasie-Charaktere (Fursonas) mit Fellkostümen. Bei Pup Play geht es eher um das Verhalten und den Headspace – oft mit Rubber, Neopren oder Streetwear. Es gibt Überschneidungen, aber es sind zwei eigene Communities.</p>
-    <p data-lang="en">Mostly not. Furries often create whole fantasy characters (fursonas) with fur suits. Pup play is more about behaviour and headspace – often with rubber, neoprene or streetwear. There's overlap, but they're two separate communities.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Mostly not. Furries often create whole fantasy characters (fursonas) with fur suits. Pup play is more about behaviour and headspace – often with rubber, neoprene or streetwear. There's overlap, but they're two separate communities.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Bin ich zu alt oder habe ich den „falschen“ Body?</span><span data-lang="en">Am I too old or do I have the “wrong” body?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Bin ich zu alt oder habe ich den „falschen“ Body?</span><span data-lang="en">Am I too old or do I have the “wrong” body?</span></summary><div class="a">
     <p data-lang="de">Nein und nein. In der Community gibt es Pups jeden Alters (ab 18) und jeder Figur. Was zählt, ist, dass du dich wohlfühlst und andere respektierst.</p>
-    <p data-lang="en">No and no. The community has pups of every age (18+) and every body type. What matters is that you feel good and respect others.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">No and no. The community has pups of every age (18+) and every body type. What matters is that you feel good and respect others.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <p class="cat" data-lang="de">Rollen</p><p class="cat" data-lang="en">Roles</p>
+  <h2 class="cat" data-lang="de">Rollen</h2><h2 class="cat" data-lang="en">Roles</h2>
 
-  <details class="faq glass"><summary><span data-lang="de">Trainer, Handler, Owner – wo ist der Unterschied?</span><span data-lang="en">Trainer, handler, owner – what's the difference?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Trainer, Handler, Owner – wo ist der Unterschied?</span><span data-lang="en">Trainer, handler, owner – what's the difference?</span></summary><div class="a">
     <p data-lang="de">Ein <b>Handler</b> passt auf den Pup auf, gibt Struktur und sorgt für Sicherheit. Ein <b>Trainer</b> bringt einem Pup Neues bei. Ein <b>Owner</b> steht für eine feste, oft langfristige Bindung. Wichtig: Handler und Pup müssen kein Paar sein.</p>
-    <p data-lang="en">A <b>handler</b> looks after the pup, gives structure and keeps things safe. A <b>trainer</b> teaches a pup new things. An <b>owner</b> stands for a fixed, often long-term bond. Important: handler and pup don't have to be a couple.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">A <b>handler</b> looks after the pup, gives structure and keeps things safe. A <b>trainer</b> teaches a pup new things. An <b>owner</b> stands for a fixed, often long-term bond. Important: handler and pup don't have to be a couple.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Alpha, Beta, Omega – was heißt das?</span><span data-lang="en">Alpha, beta, omega – what does that mean?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Alpha, Beta, Omega – was heißt das?</span><span data-lang="en">Alpha, beta, omega – what does that mean?</span></summary><div class="a">
     <p data-lang="de">Das beschreibt, welche Rolle ein Pup im Rudel einnimmt. Der <b>Alpha</b> führt, übernimmt Verantwortung und hält das Rudel zusammen. Ein <b>Beta</b> unterstützt, ein <b>Omega</b> ist oft der verspielte, entspannte Part. Ich bin Alpha – aber Alpha heißt Verantwortung, nicht Herumkommandieren.</p>
-    <p data-lang="en">It describes the role a pup takes in a pack. The <b>alpha</b> leads, takes responsibility and holds the pack together. A <b>beta</b> supports, an <b>omega</b> is often the playful, laid-back one. I'm an alpha – but alpha means responsibility, not bossing people around.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">It describes the role a pup takes in a pack. The <b>alpha</b> leads, takes responsibility and holds the pack together. A <b>beta</b> supports, an <b>omega</b> is often the playful, laid-back one. I'm an alpha – but alpha means responsibility, not bossing people around.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <p class="cat" data-lang="de">Kopf & Verhalten</p><p class="cat" data-lang="en">Mind & behaviour</p>
+  <h2 class="cat" data-lang="de">Kopf & Verhalten</h2><h2 class="cat" data-lang="en">Mind & behaviour</h2>
 
-  <details class="faq glass"><summary><span data-lang="de">Was ist dieser Headspace?</span><span data-lang="en">What is this “headspace”?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Was ist dieser Headspace?</span><span data-lang="en">What is this “headspace”?</span></summary><div class="a">
     <p data-lang="de">Der Pup Space oder Headspace ist der Moment, in dem der Alltag leiser wird: weniger denken, mehr fühlen und spielen. Für viele ist das pure Entspannung – wie Meditation, nur mit Quietschi.</p>
-    <p data-lang="en">Pup space or headspace is the moment everyday life gets quieter: less thinking, more feeling and playing. For many it's pure relaxation – like meditation, just with a squeaky toy.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Pup space or headspace is the moment everyday life gets quieter: less thinking, more feeling and playing. For many it's pure relaxation – like meditation, just with a squeaky toy.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Warum versteckst du dich unter der Maske?</span><span data-lang="en">Why do you hide behind the mask?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Warum versteckst du dich unter der Maske?</span><span data-lang="en">Why do you hide behind the mask?</span></summary><div class="a">
     <p data-lang="de">Ich verstecke mich nicht – ich zeige eine Seite von mir. Die Maske hilft, in den Headspace zu kommen, und sie ist mein Markenzeichen. Hinter der Maske steckt übrigens ein ganz normaler Informatiker. 😎</p>
-    <p data-lang="en">I'm not hiding – I'm showing a side of me. The mask helps me get into headspace, and it's my trademark. Behind the mask, by the way, is a perfectly normal IT guy. 😎</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">I'm not hiding – I'm showing a side of me. The mask helps me get into headspace, and it's my trademark. Behind the mask, by the way, is a perfectly normal IT guy. 😎</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Bellt ihr den ganzen Tag?</span><span data-lang="en">Do you bark all day?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Bellt ihr den ganzen Tag?</span><span data-lang="en">Do you bark all day?</span></summary><div class="a">
     <p data-lang="de">Nein. 😄 Pup Play ist etwas, das man bewusst macht – auf Events, beim Treffen mit Freunden oder zu Hause. Den Rest der Zeit gehen wir arbeiten, kochen und zahlen Steuern wie alle anderen. Ein „Wuff!“ rutscht aber schon mal raus.</p>
-    <p data-lang="en">No. 😄 Pup play is something you do on purpose – at events, with friends or at home. The rest of the time we go to work, cook and pay taxes like everyone else. A “woof!” does slip out sometimes, though.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">No. 😄 Pup play is something you do on purpose – at events, with friends or at home. The rest of the time we go to work, cook and pay taxes like everyone else. A “woof!” does slip out sometimes, though.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <p class="cat" data-lang="de">Sicherheit & Werte</p><p class="cat" data-lang="en">Safety & values</p>
+  <h2 class="cat" data-lang="de">Sicherheit & Werte</h2><h2 class="cat" data-lang="en">Safety & values</h2>
 
-  <details class="faq glass"><summary><span data-lang="de">Konsens – was heißt das bei Pups?</span><span data-lang="en">Consent – what does it mean for pups?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Konsens – was heißt das bei Pups?</span><span data-lang="en">Consent – what does it mean for pups?</span></summary><div class="a">
     <p data-lang="de">Ja heißt Ja, Nein heißt Nein – und Grenzen sind heilig. Vor jedem Spiel wird geredet: Was ist okay, was nicht, wie sieht ein Stopp-Signal aus (gerade wenn ein Pup nicht spricht). Kommunikation ist das wichtigste Gear überhaupt.</p>
-    <p data-lang="en">Yes means yes, no means no – and limits are sacred. Before any play there's a talk: what's okay, what isn't, what a stop signal looks like (especially when a pup isn't talking). Communication is the most important gear of all.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Yes means yes, no means no – and limits are sacred. Before any play there's a talk: what's okay, what isn't, what a stop signal looks like (especially when a pup isn't talking). Communication is the most important gear of all.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Darf ich einen Pup einfach streicheln?</span><span data-lang="en">Can I just pet a pup?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Darf ich einen Pup einfach streicheln?</span><span data-lang="en">Can I just pet a pup?</span></summary><div class="a">
     <p data-lang="de">Frag vorher! Auch wenn ein Pup aussieht, als wolle er gekrault werden – er ist ein Mensch und entscheidet selbst. Auf Events gilt: erst fragen (gern auch den Handler), dann streicheln.</p>
-    <p data-lang="en">Ask first! Even if a pup looks like they want a scratch – they're a person and decide for themselves. At events: ask first (the handler too, if there is one), then pet.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Ask first! Even if a pup looks like they want a scratch – they're a person and decide for themselves. At events: ask first (the handler too, if there is one), then pet.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <details class="faq glass"><summary><span data-lang="de">Was ist Aftercare?</span><span data-lang="en">What is aftercare?</span></summary><div class="a">
+  <details class="faq"><summary><span data-lang="de">Was ist Aftercare?</span><span data-lang="en">What is aftercare?</span></summary><div class="a">
     <p data-lang="de">Aftercare ist die Zeit nach dem Spielen: runterkommen, etwas trinken, kuscheln, reden. Wer intensiv im Headspace war, braucht oft einen Moment, um wieder anzukommen. Ein guter Handler nimmt sich dafür Zeit.</p>
-    <p data-lang="en">Aftercare is the time after play: winding down, having a drink, cuddling, talking. Anyone who was deep in headspace often needs a moment to come back. A good handler makes time for that.</p><p class="igcta"><a href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
+    <p data-lang="en">Aftercare is the time after play: winding down, having a drink, cuddling, talking. Anyone who was deep in headspace often needs a moment to come back. A good handler makes time for that.</p><p class="igcta"><a data-track="instagram_faq_answer" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener">🎥 <span data-lang="de">Mehr dazu auf Instagram</span><span data-lang="en">More on Instagram</span> @puppy_timbo →</a></p></div></details>
 
-  <div class="note glass">
-    <p data-lang="de">🟢 <b>Noch Fragen?</b> Schreib mir auf Instagram (puppy_timbo) oder komm in den Telegram-Kanal <a href="https://t.me/timbo_bark">t.me/timbo_bark</a>. Pup Play ist ein Hobby für Erwachsene (18+).</p>
-    <p data-lang="en">🟢 <b>More questions?</b> DM me on Instagram (puppy_timbo) or join the Telegram channel <a href="https://t.me/timbo_bark">t.me/timbo_bark</a>. Pup play is a hobby for adults (18+).</p>
-  </div>
+  
+  <a class="card ig main" href="https://www.instagram.com/puppy_timbo/" target="_blank" rel="noopener" style="margin-top:30px" data-track="instagram_faq">
+    <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span>
+    <span><b data-lang="de">Noch Fragen?</b><b data-lang="en">More questions?</b><small data-lang="de">Schreib mir auf Instagram – @puppy_timbo</small><small data-lang="en">DM me on Instagram – @puppy_timbo</small></span>
+    <span class="go" aria-hidden="true">→</span>
+  </a>
+  <p class="muted" style="text-align:center;font-size:.82rem;margin-top:10px" data-lang="de">Pup Play ist ein Hobby für Erwachsene (18+).</p>
+  <p class="muted" style="text-align:center;font-size:.82rem;margin-top:10px" data-lang="en">Pup play is a hobby for adults (18+).</p>
 
-  <footer><div class="rainbow"></div><p>Vielfalt macht stark. 🌈 · Wuff! 🐾</p></footer>
+  <footer>
+    <div class="rb"></div>
+    <p data-lang="de"><b>Vielfalt macht stark.</b> 🌈 Respekt · Konsens · Safe Space</p>
+    <p data-lang="en"><b>Diversity makes us strong.</b> 🌈 Respect · Consent · Safe space</p>
+    <p style="margin-top:8px">© 2026 Puppy Timbo · Wuff! 🐾</p>
+    <p class="legal"><a href="#" onclick="return timboCookieSettings()" data-lang="de">Cookie-Einstellungen</a><a href="#" onclick="return timboCookieSettings()" data-lang="en">Cookie settings</a></p>
+  </footer>
 </main>
 </body>
 </html>
